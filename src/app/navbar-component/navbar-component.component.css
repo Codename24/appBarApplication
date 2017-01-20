@@ -112,8 +112,8 @@ li a:click
    height: 50px;
    width: 2px;
    overflow: hidden;
-   background-color: #DDD;
-   border-right: 2px solid #194062;
+   background-color: #194062;;
+   border-right: 1px solid #194062;
 }
 
 
