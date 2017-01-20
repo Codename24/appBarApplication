@@ -1,1 +1,1027 @@
-/* You can add global styles to this file, and also import other style files */
+body, textarea
+{
+	font-family: 'Arial', Sans-serif;
+	font-size: 11.5px;
+	background-color: white;
+	margin: 0px;
+}
+body
+{
+	min-width: 991px;
+}
+/*
+In IE7, the FORM tag is followed by (~20 pixels of) vertical space. So
+set the bottom margin (or all margins) to zero to eliminate that space.
+Another solution would be to set "display: inline;" or do both settings.
+*/
+form
+{
+	margin-bottom: 0;
+}
+A:link, A:visited, A:active
+{
+	color: #003798;
+	text-decoration: none;
+}
+* {
+    box-sizing: border-box;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.col-05 {width:4.16%}
+
+[class*="col-"] {
+    float: left;
+    padding: 0 20px;
+}
+.row {
+	width: 100%;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#emailSearchDlg INPUT[type=text], #emailSearchDlg INPUT[type=email], #emailSearchDlg SELECT
+{
+	padding: 6px 4px;
+	margin: 5px;
+	border: 1px #737373 solid;
+}
+#ndtdconfirmMsg
+{	
+	min-width: 260px;
+	width: auto;
+	padding: 10px 50px 0 30px;	
+    -webkit-box-shadow:  0px 0px 8px 1px #D9D9D9;
+    box-shadow:  0px 0px 8px 1px #D9D9D9;        
+}
+#ndtdconfirmMsg .ndTipMsg
+{	
+	text-align:center;
+}
+#stdTop
+{
+	min-height: 56px;
+	width: 100%;
+}
+#topLogo
+{
+	padding-top: 8px;
+	margin-top: 0px;
+	margin-left: 8px;
+}
+#topLogoAsText
+{
+    padding-top: 13px;
+    text-align: left;
+    display: block;
+}
+#topLogoAsText A
+{
+    color: #000000;
+	font-size: 18px;
+}
+#topRightBox 
+{
+	font-weight: bolder;
+	font-size: 12px;
+	margin-right: 10px;
+}
+#topRightBox A
+{
+	color: #3f74aa;
+}
+#topUserNameDisp
+{
+	color: #999999;
+	white-space: nowrap;
+}
+#topRightLinks
+{
+	padding-left: 30px;
+	white-space: nowrap;
+}
+#stdBar
+{
+	max-height: 32px;
+	height: 32px;
+	width: 100%;
+	position: relative;
+	background: #24588E ;
+	font-size: 12px;
+}
+#newBtnBox
+{
+	display: inline-block;
+	width: 20%;
+	max-height: 32px;
+	font-size: 0;
+	margin-right: 6px;
+	float: left;
+}
+#stdBarMidBox
+{
+	display: inline-block;
+	left: 20%;
+	height: 32px;
+	line-height: 32px;
+	min-width: 691px;
+	max-width: 720px;
+	width: auto;
+}
+#stdMiddle
+{
+	background-color: #3B75AB;
+}
+#stdPaneBar
+{
+	float: left;
+	width: 30px;
+	background-color: #4f84ba;
+	cursor: pointer;
+	display: none;
+}
+.vertList
+{
+	border: solid 2px transparent;
+	/* image width (14px) + padding (2x4px) + border (2x2px) + margin (2x2px) = 30px */
+	/* top/bottom padding + top/bottom margin = arbitrary */
+	padding: 6px 4px;
+	margin: 8px 2px;
+}
+.vertNav
+{
+	padding: 16px 10px 16px 3px;
+}
+.vertBorder
+{
+	border: solid 2px #c8e1fc;
+}
+#stdNav
+{
+	z-index: 5;
+	float: left;
+	color: white;
+	background-color: #3B75AB;
+	width: 20%;
+}
+#stdNav, #newBtnBox
+{
+	max-width: 300px;
+}
+#stdPanePipe 
+{
+	z-index: 6;
+	float: left;
+	width: 6px;
+	height: 64px; /* initial value */
+	background-color: #24588E ;
+	cursor: e-resize;
+}
+#stdPanePipe IMG
+{
+	margin: 30px 2px 0 2px; /* initial value */
+}
+#stdContent
+{
+	overflow: hidden;
+	background-color: White;
+}
+#sbivPane
+{
+	overflow: hidden;
+	background-color: White;
+	display: none;
+}
+#sbivDocViewPane
+{
+	float: left;
+	vertical-align: top;
+	overflow: hidden;
+	min-height: 150px;
+	display: none;
+	border-right: solid 1px #BABABA;
+}
+#sbivButtonTable
+{
+	width: 100%;
+	padding: 8px;
+	border-bottom: solid 1px #BABABA;
+}
+.sbivLinks
+{
+	font-size: 12px;
+	color: #003798;
+	font-weight: bold;
+}
+#sbivViewDoc
+{
+	background-color: white;
+	min-height: 300px;
+	width: 100%;
+}
+#sbivViewBody
+{
+	margin: 0px;
+}
+#bodyPane
+{
+
+}
+#pageFooter
+{
+	clear: both;
+	font-size: 9px;
+	border-top: solid 1px #bbbbbb;
+	text-align: center;
+	padding-top: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 28px;
+	background-color: White;
+}
+#pageFooter TABLE
+{
+	margin: auto;
+}
+.foldListCabContents .selected, #targetFolderPane .selected
+{
+	background-color: #6699ff;
+	background-color: rgb(102, 153, 255);
+	color: #fff;
+}
+TD .nuTitle
+{
+	padding: 3px;
+}
+.nuTitle
+{
+	font-size: 24px;
+	padding: 4px 10px 4px 10px;
+}
+.nuSubTitle
+{
+	padding-left: 10px;
+}
+.nuTitle IMG
+{
+	vertical-align: middle;
+}
+
+.triangleRight
+{
+	background: url(/neWeb2/images/triangleRight.gif) no-repeat right center;
+	margin-left: 3px;
+	margin-right: 3px;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+}
+.favEl						/* placeholder for favorite status indicator */
+{
+	height: 13px;
+	width: 13px;
+	display: inline-block;
+	cursor: pointer;
+	background: url(/neWeb2/images/lvUnfav.png) no-repeat center center;
+	margin-top: 4px;
+	padding: 4px;
+}
+.lvTable TR TD .favEl
+{
+	margin-left: -2px;
+	margin-right: -1px;
+}
+.favorite					/* overlays favEl to indicate an item that is currently a favorite */
+{
+	background-image: url(/neWeb2/images/lvFav.png);
+}
+.containerHeader			/* title area for container pages (workspace, folder, saved search) */
+{
+	margin-left: 3px;
+	width: 100%;
+}
+.svOptEl					/* placeholder for summary view options button */
+{
+	width: 20px;
+}
+.svOptActive
+{
+	background-image: url(/neWeb2/images/svOptBtn.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	cursor: pointer;
+}
+.ss-sortable-placeholder
+{
+	height: 30px;
+	background-color: #E0E0E0;
+}
+.pageOptBtn
+{
+	float: right;
+	margin-top: 6px;
+	margin-right: 10px;
+}
+#alBtnLeft
+{
+	color: white;
+	padding: 7px 9px 6px 8px;
+	width: 67px;
+}
+#activeListBtn
+{	
+	-webkit-border-radius: 2px;    
+    border-radius: 2px;
+	position: relative;
+	float: right;
+	margin: auto 5px auto 0px;
+	visibility: hidden;
+	color: #FFFFFF;
+	padding: 6px 0px;
+	cursor: pointer;
+	font-size: 12px;
+	height: 14px;
+	top: 2px;
+	bottom: 0px;
+	display: inline-block;
+    width: 85px;
+}
+#activeListBtn DIV
+{
+	display: inline;	
+}
+
+.rndGrn
+{
+    background-color: #8FC400;
+    border: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+    border-radius: 6px;
+    font-size: 9pt;
+    cursor: pointer;
+}
+.greenBtn
+{	
+	border: 1px solid #759404;
+	padding: 6px 15px;
+	/* Default Value */
+	background: url(/neWeb2/images/greenBtn.jpg) top right repeat-x #82A504;
+	/* IE10 */ 
+	background-image: -ms-linear-gradient(top, #9BB736 0%, #82A504 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #9BB736 0%, #82A504 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #9BB736 0%, #82A504 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #9BB736), color-stop(1, #82A504));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #9BB736 0%, #82A504 100%);
+	/* Proposed W3C Markup */ 
+	background-image: linear-gradient(top, #9BB736 0%, #82A504 100%);
+}
+#alCount
+{
+	border-left: 1px solid #759404;
+	padding: 7px 7px 6px 5px;
+	margin-top: -3px;
+	margin-left: -4px;        
+        
+}
+#alCount:hover, #alBtnLeft:hover{
+	-webkit-box-shadow: inset 0px -2px 10px 0px #82A504;        
+	box-shadow: inset 0px -2px 10px 0px #82A504; 
+}
+#alCount:active, #alBtnLeft:active{
+	-webkit-box-shadow: inset 0px -2px 10px 0px #759404;        
+	box-shadow: inset 0px -2px 10px 0px #759404; 
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	/* Safari and Google Chrome only - fix margins */
+	#alCount {
+		top: -1px;
+	}
+}
+
+#pdDlg
+{
+	width: 600px;
+	height: auto;	
+	min-height: 550px;
+}
+@-moz-document url-prefix() 
+{
+	#pdDlg 
+	{
+		height: auto;
+		min-height: 565px;
+	}
+}
+#selectModePrompt
+{
+	background-color: #FFEFAB;
+	border-bottom: solid 5px #FFD10F;
+	color: #415971;
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -190px;
+	padding: 15px;
+	width: 355px;
+	height: 15px;
+	text-align: left;
+	box-shadow: 0px 0px 5px #A0A0A0;
+	-webkit-box-shadow: 0px 0px 5px #A0A0A0;
+}
+#selectModePrompt A
+{
+	font-size: 12px;
+	color: #000;
+	text-decoration: underline;
+}
+#smpButtons
+{
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+}
+.listSwitch
+{
+	float: right;
+	margin-top: 12px;
+	margin-right: 24px;
+}
+.listSwitch A
+{
+	font-size: 11px;
+}
+SPAN[disabled]
+{
+	color: #999999;
+}
+
+.rndBlue
+{
+    background-color: #4479AF;
+    border: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+    border-radius: 15px;
+    font-size: 9pt;
+    cursor: pointer;
+}
+
+/* Check In List dialog */
+.adlHeadRow
+{
+	background-color: gainsboro;
+	position: relative;
+}
+.adlDocRow
+{
+	position: relative;
+	border: solid 1px transparent;
+}
+.adlDocRowHovered
+{
+	background-color: #ebf4fe;
+	border: solid 1px #84adf7;
+}
+.adlTabName
+{
+	position: relative; 
+	top: 0px; 
+	left: 0px;
+	width: 350px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	padding: 3px;
+}
+.adlTabVer
+{
+	position: absolute;
+	top: 0px;
+	left: 351px;
+	width: 25px;
+	padding: 3px;
+	border-left: 1px solid white;
+}
+.adlTabChecked
+{
+	position: absolute;
+	top: 0px;
+	left: 379px;
+	width: 95px;
+	padding: 3px;
+	border-left: 1px solid white;
+}
+.adlTabOpt
+{
+	position: absolute;
+	top: -1px;
+	right: 0px;
+	background-color: #ebf4fe;
+	padding: 3px;
+	border-top: solid 1px #84adf7;
+	border-bottom: solid 1px #84adf7;
+	display: none;
+	font-style: italic;
+	padding-right: 10px;
+}
+.adlTabOpt A:hover
+{
+	text-decoration: underline;
+}
+.adlNameOpt 
+{
+	color: #003798;
+	cursor: pointer;
+}
+.adlNameOpt:hover
+{
+	text-decoration: underline;
+}
+#checkInRemoveDlg
+{
+	width: 400px;
+	height: 70px;
+}
+
+
+/* jQuery-UI overrides */
+.ui-accordion-header
+{ 
+	border: 1px solid transparent; 
+	background-color:#E2E2E2; 
+	font-weight: bold; 
+	color:#415971; 
+}
+/*	I'm not sure why I added this CSS.  Its causing a problem in the autocomplete.  But I'm not
+	deleting it so we will know why its not here, just in case we find out why it was here.
+.ui-menu-item{
+	border: 1px solid transparent;
+}
+*/
+.ui-menu-item.ui-state-focus:last-child {
+	margin-bottom: 0px !important;
+}
+.ui-autocomplete
+{
+	max-height: 145px;
+	overflow-y: auto;
+	overflow-x: hidden;	 
+}
+
+
+/* Carried over from old UI */
+.pageTitle
+{
+    MARGIN-TOP: 6px;    
+    FONT-SIZE: 24px;
+    MARGIN-BOTTOM: 10px;
+    TEXT-ALIGN: left;
+}
+.pageTitle IMG
+{
+	display: none;
+}
+SPAN.pageTitle
+{
+	text-align: left;
+}
+.subTitle
+{
+	COLOR: #6699FF;
+	FONT-SIZE: 10pt;
+}
+.procErr
+{
+    BORDER: black 1px solid;
+    PADDING: 5px;
+    FONT-WEIGHT: bold;
+    COLOR: #cc0033;
+}
+.nePrint
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+}
+.neInfo
+{
+    FONT-SIZE: 8pt;
+    COLOR: green;
+}
+
+/* jQuery.watermark.js */
+.watermark
+{
+	color: Gray;
+}
+.redText
+{
+	color: Red;
+}
+/* This rule is used only by tracking.aspx but must be included here to work around the IE bug referenced in #22180. */
+.userList .selected
+{
+	color: #ffffff;
+	background-color: #376CA2;
+	margin-top: 0px;
+	/*padding-bottom: 0px;
+	padding-top: 2px;*/
+}
+.hoverTarget
+{
+	background-color: #6699ff;
+}
+/* Based on a UI Change approved 3/23/12.  Presumably the UIEC will ask for more messages to use this format in the future. */
+.prominentMsg
+{
+	font-size: 14px;
+	text-align: center;
+	padding-top: 20px;
+}
+#recentDocs{
+	width: 290px;
+}
+#recentDocs li{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+
+/* document type images */
+.app-doc {	background-position: 0px; }
+.app-wpd {	background-position: -25px; }
+.app-xls {	background-position: -50px; }
+.app-pdf {	background-position: -75px; }
+.app-ppt {	background-position: -100px; }
+.app-def {	background-position: -125px; }
+.app-msg {	background-position: -150px; }
+.app-msgndatt {	background-position: -175px; }
+.app-vsd {	background-position: -200px; }
+.app-mpp {	background-position: -225px; }
+.app-img {	background-position: -250px; }
+.app-gif {	background-position: -250px; }
+.app-bmp {	background-position: -250px; }
+.app-url {	background-position: -275px; }
+.app-ndnod {	background-position: -300px; }
+.app-ndcal {	background-position: -325px; }
+.app-nddis {	background-position: -350px; }
+.app-ss {	background-position: -375px; }
+.app-fld {	background-position: -400px; }
+.app-ws {	background-position: -425px; }
+.app-ndsq {	background-position: -450px; }
+
+/* menu box (16x16) images */
+#recentDocs .app-doc {	background-position: 0px; }
+#recentDocs .app-wpd {	background-position: -16px; }
+#recentDocs .app-xls {	background-position: -32px; }
+#recentDocs .app-pdf {	background-position: -48px; }
+#recentDocs .app-ppt {	background-position: -64px; }
+#recentDocs .app-def {	background-position: -80px; }
+#recentDocs .app-msg {	background-position: -96px; }
+#recentDocs .app-msgndatt {	background-position: -112px; }
+#recentDocs .app-vsd {	background-position: -128px; }
+#recentDocs .app-mpp {	background-position: -144px; }
+#recentDocs .app-img {	background-position: -160px; }
+#recentDocs .app-gif {	background-position: -160px; }
+#recentDocs .app-bmp {	background-position: -160px; }
+#recentDocs .app-url {	background-position: -176px; }
+#recentDocs .app-ndnod {	background-position: -192px; }
+#recentDocs .app-ndcal {	background-position: -208px; }
+#recentDocs .app-nddis {	background-position: -224px; }
+#recentDocs .app-ss {	background-position: -240px; }
+#recentDocs .app-fld {	background-position: -256px; }
+#recentDocs .app-ws {	background-position: -272px; }
+#recentDocs .app-ndsq {	background-position: -288px; }
+
+/*	This is the styling for the guided tour	*/
+#pointer
+{
+	position:absolute;
+	margin-top: -5px;
+	height: 21px;
+	width: 50px;
+	border: none;
+	background: url( /neWeb2/images/yellowDown.png ) no-repeat;
+	z-index: 10;
+}
+#toolTipContent
+{
+	position:relative;
+	text-align: left;
+	font-size: 12px;
+	color: #000;
+	padding: 3px 10px;
+	border: 1px solid #FFD10F;
+	max-height: 170px; 
+	max-width: 400px;	
+	min-height: 170px; 
+	min-width: 400px;
+	background-color: #FFEFAB;
+	border-radius: 1px;
+	box-shadow: 0px 0px 5px #BCBCBC;
+	-webkit-border-radius: 1px;
+	-webkit-box-shadow: 0px 0px 5px #BCBCBC;
+}
+#toolTipBox
+{
+	position:absolute;	
+	height: auto; 
+	width: auto;
+	z-index: 10;
+}
+#toolTipText h3
+{
+	font-size: 13px;
+	margin: 0;
+	margin-top: 8px;
+}
+#toolTipText p
+{
+	padding-top: 2px;
+}
+#tourProgress
+{
+	position: absolute;
+	bottom: 11px;
+	left: 13px;
+}
+.previous
+{
+	text-decoration: none;
+	margin-right: 10px;
+	color: #000;
+}
+.next
+{
+	padding: 2px 6px 2px 6px;
+}
+.disabled
+{
+	color: gray;
+	cursor: default;
+	display: none;
+}
+.startTour
+{
+	cursor: pointer;
+}
+.tip
+{
+	display: none;
+}
+.tipImg
+{
+	border: 1px solid #000;	
+	margin: 0 10px 2px 10px;
+}
+#step
+{	
+	display: block;
+	height: 30px;
+	width: 30px;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 17%;
+}
+.tip-left
+{
+	background: url( /neWeb2/images/yellowCircle.png ) top center no-repeat;
+	position: relative;
+	float: left;
+	display: inline-block;
+	height: 170px;
+	margin-right: 4px;
+}
+#toolTipText
+{
+	position: relative;
+}
+#move
+{
+	right: 9px;
+	position: absolute; 
+	bottom: 7px;
+	line-height: 22px;
+}
+#move a
+{
+	color: #000;
+	text-decoration: underline;
+	vertical-align: middle;
+}
+#move .yellowBtn
+{
+	float: right;
+	vertical-align: middle;
+	height: 25px;
+}
+.showAgain
+{
+	position: absolute;
+	bottom: 10px;
+	left: 40px;
+}
+/* Style for empty section of a drop zone (Summary View) */
+.emptySection TD
+{
+	color: #aaaaaa;
+	font-size: 11px;
+	margin-bottom: 10px;
+}
+.emptySection TD DIV
+{
+	padding: 5px 80px;
+	border: dashed 1px #777777;
+	background-color: #F7F7F7;
+	width: auto;
+	min-width: 90px;
+	text-align: center;
+}
+.noSelect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* New "standard" header-area confirmation box first used with ND02083 */
+.headerConfirm 
+{
+	background-color: #ffefab;
+	border-top: 1px solid #BABABA;
+	color: #333333;
+	padding: 6px 10px 6px 10px;
+	position: relative;
+	font-size: 12px;
+	display: none;		/* initially hidden; slides down */
+}
+.headerConfirm A:link, .headerConfirm A:visited
+{
+	color: #376ca2;
+	text-decoration: none;
+}
+.headerConfirm .closer
+{
+	position: absolute;
+	right: 10px;
+	top: 6px;
+	cursor: pointer;
+}
+.docAttachButtons
+{
+	text-align: right;
+	margin-top: 10px;
+}
+	.docAttachButtons .rndBtn.blueBtn
+	{
+		margin-right: 8px;
+	}
+	.docAttachButtons .rndBtn.blueBtn:last-child
+	{
+		margin-right: 0px;
+	}
+.svDraggable
+{
+	-ms-touch-action: none;
+}
+/*	Style for ndNotify	*/
+.ndNotify
+{
+	background-color: white;
+	border: 1px solid #9E9E9E;
+	z-index: 5;
+	border-right: none;
+	position: fixed;
+	padding: 10px 5px 5px 10px;
+    -webkit-box-shadow:  -2px -2px 8px 2px #b5b5b5;
+    box-shadow:  -2px -1px 8px 2px #b5b5b5;
+	min-height: 65px;     
+}
+.closeBtn
+{
+	cursor: pointer;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	background: url( /neWeb2/images/delX_medDark.png ) no-repeat;
+	height: 13px;
+	width: 13px;
+	display: block;
+	float: right;
+	margin-right: 7px;
+	margin-top: 7px;
+	z-index: 10;
+	border: none;
+}
+.noteContent
+{
+	margin-top: 5px;
+	margin-right: 15px;
+	font-size: 13px;
+	color: #363636;
+}
+.noteContent SPAN
+{
+	/* If you wish to style the name of documents or folders in the notification */
+	font-weight: bold;
+}
+.noteContent SPAN A
+{
+	/* If you wish to style the name of documents or folders in the notification */
+	font-weight: normal;
+	text-decoration: underline;
+}
+/*	End ndNotify style	*/
+/*	Style for info hover tip	*/
+.info
+{
+	background-image: url(/neWeb2/images/info.png);
+	height: 14px;
+	width: 14px;
+	display: inline-block;
+}
+/*	End style for info hover tip	*/
+/*	Style for Delete lightbox	*/
+#deleteDlg
+{
+	min-width: 400px;
+	max-width: 500px;
+	min-height: 100px;
+}
+#deleteDlg .hotWarn
+{
+    COLOR: red;
+    FONT-SIZE: 9pt;
+}
+#deleteDlg .hotHint
+{
+    COLOR: red;
+    FONT-SIZE: 8pt;
+}
+/*	End of style for Delete lightbox	*/
+#topCount
+{
+	text-align: right;
+	height: 24px;
+}
+.lvTail
+{
+	height: 24px;
+}
+#containerSync, .containerSync
+{
+	position:absolute;
+	bottom:0;
+	right:-1px;
+}
+#containerBlock
+{
+	display:inline-block;
+	position:relative;
+}
+.viewInBrowser
+{
+	vertical-align: text-bottom;
+}
+#ndoc_frame
+{
+	display: none !important;
+	height: 1px;
+	width:1px;
+}
+#waitingPane
+{
+	text-align: center;
+	margin-top: 200px;
+}
+#waitingPane span{
+	margin-top: 15px;
+	display: block;
+	color:#666666;
+	font-size: 15px;
+}
