@@ -6,6 +6,7 @@
 }
 .col-12{
     height: 50px;
+    padding-left: 0;
 }
 .sidenavmenu
 {
@@ -55,31 +56,64 @@ li a:click
     opacity: 60%;
 }
 
-.hamburgerLi{
-    height: 50px;
-    width:50px;
+.hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 56px;
+  height: 50px;
+  font-size: 0;
+  text-indent: -9999px;
+  cursor: pointer;
+  outline: none;
+  background: none;   
 }
 
-
-/*.sidenavmenu a
+.hamburger:hover
 {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s
+    background-color: #194062;
 }
 
-.sidenavmenu a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  top: 26px;
+  left: 22px;
+  right: 22px;
+  height: 2px;
+  width: 14px;
+  background: #ffffff;
+}
+ 
+.hamburger span::before,
+.hamburger span::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  content: "";
+}
+ 
+.hamburger span::before {
+  top: -5px;
+}
+ 
+.hamburger span::after {
+  bottom: -5px;
 }
 
-.sidenavmenu .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}*/
+.divider-vertical-left
+{
+   height: 50px;
+   width: 2px;
+   overflow: hidden;
+   background-color: #DDD;
+   border-right: 2px solid #194062;
+}
+
 
