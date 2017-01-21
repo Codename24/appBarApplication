@@ -1,5 +1,17 @@
 import { Component } from '@angular/core';
-import {NavbarComponentComponent} from './navbar-component/navbar-component.component'
+import {NavbarComponentComponent} from './navbar-component/navbar-component.component';
+import {DropdownComponent} from './dropdown/dropdown.component';
+
+export class DropdownValue
+{
+  value:string;
+  label:string;
+  constructor(value: string, label: string )
+  {
+    this.label = label;
+    this.value = value;
+  }
+}
 
 @Component({
   selector: 'app-root',
@@ -7,5 +19,7 @@ import {NavbarComponentComponent} from './navbar-component/navbar-component.comp
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+
 }
+
+
