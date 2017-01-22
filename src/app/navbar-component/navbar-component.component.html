@@ -1,11 +1,19 @@
 <div class="row navbar">
-    <div class="col-12">
-        <ul>
-            <li class="hamburger"><span>toggle menu</span></li>
-            <li class="divider-vertical-left"></li>
-            <li><a href="#Documents"> DOCUMENTS</a></li>
-            <li><a href="#Matters">MATTERS</a>
-                <li>
-        </ul>        
-    </div>
+    <div class="col-12 ">
+        <div class="col-5 col-left-0">
+            <ul>
+                <li class="hamburger"><span>toggle menu</span></li>
+                <li class="divider-vertical-left"></li>
+                <li><a href="#Documents"> DOCUMENTS</a></li>
+                <li><a href="#Matters">MATTERS</a>
+                    <li>
+            </ul>
+        </div>
+        <div class="col-3">
+        </div>
+        <div class="col-4" style="float:right">
+<button [@buttonTrigger]="state" class="searchRectangle" (click)="toggleMenu()"><i class="fa fa-angle-left" aria-hidden="true"></i>{{buttonValue}}</button>
+</div>
+<app-search [@searchComponentTrigger]="state"></app-search>
+</div>
 </div>

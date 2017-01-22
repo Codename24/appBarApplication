@@ -1,0 +1,15 @@
+
+.searchContainer
+{
+    width:460px;
+}
+.searchsquare{
+    width:60px;
+    background-color: #e66e25;
+}
+.searchForm
+{
+    background-color: #194062;
+    position: relative;
+    width: 410px;
+}

@@ -116,4 +116,30 @@ li a:click
    border-right: 1px solid #194062;
 }
 
+.searchRectangle{
+    background-color: #e66e25;
+    width:180px;
+    position: absolute;
+    right:0;
+    height:50px;
+    font-size: 14px;
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: center;
+    color: #ffffff;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 0;
+    display: inline-block;
+    appearance: none;
+    box-shadow: none;
+    border: 0;
+    outline: none;
+}
+
+.col-left-0{
+  padding-left:0px;
+}
+
 

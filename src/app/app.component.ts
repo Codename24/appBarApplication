@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {NavbarComponentComponent} from './navbar-component/navbar-component.component';
 import {DropdownComponent} from './dropdown/dropdown.component';
 
+
 export class DropdownValue
 {
   value:string;
