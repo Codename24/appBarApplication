@@ -42,6 +42,18 @@ import { SearchComponent } from '../search/search.component'
       ,
       transition('closed => opened', animate('400ms ease-in-out')),
       transition('opened => closed', animate('400ms ease-in-out'))
+    ]),
+    
+    trigger('sidebarComponentTrigger', [
+      state('closed', style({
+        display: 'none'
+      })),
+      state('opened', style({
+        display: 'block'
+      })),
+      ,
+      transition('closed => opened', animate('400ms ease-in-out')),
+      transition('opened => closed', animate('400ms ease-in-out'))
     ])
 
 
@@ -52,6 +64,7 @@ export class NavbarComponentComponent implements OnInit {
 
   constructor() { }
   state: string = 'closed'
+  sidebarState: string = 'closed'
   buttonValue:string ='< Go to a matter...';
   ngOnInit() {
   }
@@ -59,8 +72,8 @@ export class NavbarComponentComponent implements OnInit {
     this.state = this.state == 'closed' ? 'opened' : "closed";
     this.buttonValue = this.state=='closed'?' Go to a matter...':'>'
   }
-  openNav() {
-
+  toggleNavBar() {
+    this.sidebarState = this.sidebarState == 'closed' ? 'opened' : "closed";
   }
 
 }

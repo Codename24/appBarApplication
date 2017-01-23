@@ -2,11 +2,12 @@
     <div class="col-12 ">
         <div class="col-5 col-left-0">
             <ul>
-                <li class="hamburger"><span>toggle menu</span></li>
+                <li class="hamburger" (click)="toggleNavBar()">
+                    <button><span></span></button>
+                </li>
                 <li class="divider-vertical-left"></li>
                 <li><a href="#Documents"> DOCUMENTS</a></li>
-                <li><a href="#Matters">MATTERS</a>
-                    <li>
+                <li><a href="#Matters">MATTERS</a></li>
             </ul>
         </div>
         <div class="col-3">
@@ -17,3 +18,9 @@
 <app-search [@searchComponentTrigger]="state"></app-search>
 </div>
 </div>
+<sidebar [@sidebarComponentTrigger]="sidebarState"></sidebar>
+
+<!--<div class="col-12">
+    <p style="color: red">My MAIN CONTENT LINE 1</p>
+    <p style="color: red; float: right;">My MAIN CONTENT LINE 2</p>
+</div>-->
