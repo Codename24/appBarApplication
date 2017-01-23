@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponentComponent } from './navbar-component/navbar-component.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { SearchComponent } from './search/search.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponentComponent,
     DropdownComponent,
-    SearchComponent
+    SearchComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
