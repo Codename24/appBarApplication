@@ -1,31 +1,46 @@
-#stdNavBar {
-  background-color: #225582;
-  color: #fff;
-  width: 25%;
-  height:100vh;
-  z-index: 9999;
-}
-
-
-/*
-#stdBarOLD  {
-  background-color: #225582;
-  color: #fff;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 25%;
-  min-width: 250px;
-  z-index: 9999;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-
-#stdBarOLD ul {
-  font-size: 18px;
+#stdNavBarUl {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
   line-height: 3;
   font-weight: 400;
-  padding-top: 50px;
   list-style: none;
-}*/
+}
+
+a {
+  cursor: pointer;
+}
+
+.line {
+  height: 2px;
+  opacity: 0.52;
+  border: solid 1px #cccccc;
+}
+
+.scrollable {
+    overflow: auto;
+}
+
+.navigation {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #194062;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Position and style the close button (top right corner) */
+.wsCloseBtn {
+    font-size: xx-large;
+    float: left;
+}
+
+.shapeBtn {
+    font-size: xx-large;
+    float: right;
+}

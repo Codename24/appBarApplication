@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'sidebar',
   templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.css'],
+  styleUrls: ['./sidebar.component.css', '../../app/font.css'],
   
 })
 export class SidebarComponent implements OnInit {
@@ -13,6 +13,9 @@ export class SidebarComponent implements OnInit {
   ngOnInit() {
   }
   
-  handleNavBar() {
+  closeNav() {
+  }
+
+  togglePinNav() {
   }
 }
