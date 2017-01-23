@@ -1,0 +1,31 @@
+#stdNavBar {
+  background-color: #225582;
+  color: #fff;
+  width: 25%;
+  height:100vh;
+  z-index: 9999;
+}
+
+
+/*
+#stdBarOLD  {
+  background-color: #225582;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 25%;
+  min-width: 250px;
+  z-index: 9999;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#stdBarOLD ul {
+  font-size: 18px;
+  line-height: 3;
+  font-weight: 400;
+  padding-top: 50px;
+  list-style: none;
+}*/

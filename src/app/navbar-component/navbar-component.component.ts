@@ -47,7 +47,20 @@ import {DropdownValue} from '../../app/dropdownvalue'
       transition('closed => opened', animate('400ms ease-in-out')),
       transition('opened => closed', animate('400ms ease-in-out'))
     ]),
-    trigger('dropdownTrigger', [
+    
+    trigger('sidebarComponentTrigger', [
+      state('closed', style({
+        display: 'none'
+      })),
+      state('opened', style({
+        display: 'block'
+      })),
+      ,
+      transition('closed => opened', animate('400ms ease-in-out')),
+      transition('opened => closed', animate('400ms ease-in-out'))
+    ]),
+	
+     trigger('dropdownTrigger', [
       state('closed', style({
         display: 'none'
       })),
@@ -59,7 +72,6 @@ import {DropdownValue} from '../../app/dropdownvalue'
       transition('closed => opened', animate('200ms ease-in-out')),
       transition('opened => closed', animate('200ms ease-in-out'))
     ])
-
   ]
 
 })
@@ -69,6 +81,7 @@ export class NavbarComponentComponent implements OnInit {
   state: string = 'closed';
   firsDropDownState:string = 'closed';
   secondDropDownState:string = 'closed'
+  sidebarState: string = 'closed'
   buttonValue:string ='< Go to a matter...';
   documentsDropDownValues:DropdownValue[]; 
 
@@ -83,16 +96,16 @@ export class NavbarComponentComponent implements OnInit {
     this.buttonValue = this.state=='closed'?' Go to a matter...':'>'
   }
 
-  openDocumentsDrodown(){
+  openDocumentsDrodown() {
   this.firsDropDownState = this.firsDropDownState == 'closed' ? 'opened' : "closed";
   }
 
-  openMattersDrodown()
-  {
+  openMattersDrodown() {
     this.secondDropDownState= this.secondDropDownState == 'closed' ? 'opened' : "closed";
   }
-  openNav() {
 
+  toggleNavBar() {
+    this.sidebarState = this.sidebarState == 'closed' ? 'opened' : "closed";
   }
 
 }
