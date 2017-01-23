@@ -11,14 +11,14 @@ import {DropdownValue} from '../../app/dropdownvalue'
 })
 export class DropdownComponent implements OnInit {
 
-@Input() public dropDownValues: DropdownValue[];
+@Input() dropDownValues: DropdownValue[];
 
 ngOnInit()
 {
 
 }
-constructor(dropDownValues:DropdownValue[])
-{
-  this.dropDownValues = dropDownValues;
-}
+// constructor(dropDownValues:DropdownValue[])
+// {
+//   this.dropDownValues = dropDownValues;
+// }
 }
