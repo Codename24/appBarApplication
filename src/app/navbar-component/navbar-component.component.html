@@ -4,8 +4,11 @@
             <ul>
                 <li class="hamburger"><span>toggle menu</span></li>
                 <li class="divider-vertical-left"></li>
-                <li><a href="#Documents"> DOCUMENTS</a></li>
-                <li><a href="#Matters">MATTERS</a>
+                <li (click)="openDocumentsDrodown()"><a href="#Documents"> DOCUMENTS</a>
+                <app-dropdown [@dropdownTrigger]="firsDropDownState" [dropDownValues]="documentsDropDownValues"></app-dropdown>
+                </li>
+                <li (click)="openMattersDrodown()"><a href="#Matters">MATTERS</a>
+                <app-dropdown [@dropdownTrigger]="secondDropDownState" [dropDownValues]="documentsDropDownValues"></app-dropdown>
                     <li>
             </ul>
         </div>

@@ -19,7 +19,8 @@ import {DropdownValue} from '../../app/dropdownvalue'
   selector: 'app-navbar-component',
   templateUrl: './navbar-component.component.html',
   styleUrls: ['./navbar-component.component.css', '../../app/font.css'],
-  // providers:[DropdownValue],
+  
+  
   animations: [
     trigger('searchComponentTrigger', [
       state('closed', style({
@@ -46,8 +47,18 @@ import {DropdownValue} from '../../app/dropdownvalue'
       transition('closed => opened', animate('400ms ease-in-out')),
       transition('opened => closed', animate('400ms ease-in-out'))
     ]),
-    
+    trigger('dropdownTrigger', [
+      state('closed', style({
+        display: 'none'
+      })),
+      state('opened', style({
 
+        display: 'block'
+      })),
+      ,
+      transition('closed => opened', animate('200ms ease-in-out')),
+      transition('opened => closed', animate('200ms ease-in-out'))
+    ])
 
   ]
 
@@ -55,21 +66,30 @@ import {DropdownValue} from '../../app/dropdownvalue'
 export class NavbarComponentComponent implements OnInit {
 
   constructor() { }
-  state: string = 'closed'
+  state: string = 'closed';
+  firsDropDownState:string = 'closed';
+  secondDropDownState:string = 'closed'
   buttonValue:string ='< Go to a matter...';
-  documentsDropDownValues = [
-  new DropdownValue("#","Recent"),
-  new DropdownValue("#","Favourites")];
+  documentsDropDownValues:DropdownValue[]; 
 
  
   ngOnInit() {
+   this.documentsDropDownValues = [
+  new DropdownValue("#","Recent"),
+  new DropdownValue("#","Favourites")];
   }
   toggleMenu() {
     this.state = this.state == 'closed' ? 'opened' : "closed";
     this.buttonValue = this.state=='closed'?' Go to a matter...':'>'
   }
-  openDrodown(){
 
+  openDocumentsDrodown(){
+  this.firsDropDownState = this.firsDropDownState == 'closed' ? 'opened' : "closed";
+  }
+
+  openMattersDrodown()
+  {
+    this.secondDropDownState= this.secondDropDownState == 'closed' ? 'opened' : "closed";
   }
   openNav() {
 
