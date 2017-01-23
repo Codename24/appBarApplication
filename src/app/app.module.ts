@@ -8,6 +8,7 @@ import { NavbarComponentComponent } from './navbar-component/navbar-component.co
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { SearchComponent } from './search/search.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { NavTreeComponent } from './navTree/navTree.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     NavbarComponentComponent,
     DropdownComponent,
     SearchComponent,
-    SidebarComponent
+    SidebarComponent,
+    NavTreeComponent
   ],
   imports: [
     BrowserModule,
