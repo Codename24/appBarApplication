@@ -55,6 +55,9 @@ li a:click
 {
     opacity: 60%;
 }
+li a:active{
+   background-color: #194062;
+}
 
 .hamburger {
   display: block;
@@ -127,8 +130,7 @@ li a:click
     font-style: normal;
     font-stretch: normal;
     text-align: center;
-    color: #ffffff;
-    padding: 14px 16px;
+    color: #ffffff;    
     text-decoration: none;
     border-radius: 0;
     display: inline-block;
@@ -136,6 +138,20 @@ li a:click
     box-shadow: none;
     border: 0;
     outline: none;
+}
+
+.arrow{
+  margin-right:10%;
+  vertical-align:sub;
+  
+}
+.buttonContent i
+{
+float: left;
+}
+.searchText{
+  padding-top: 14px;
+  padding-bottom:14px;
 }
 
 .col-left-0{
