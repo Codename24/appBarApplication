@@ -1,4 +1,3 @@
-<ul>
-<li *ngFor="let value of values" (click)="selectItem(value.value)">{{value.label}}</li>
-</ul>
-
+<div class="dropdown-container" >
+    <a *ngFor="let dropdownValue of dropDownValues" href="{{dropdownValue.value}}">{{dropdownValue.label}}</a>
+<div>

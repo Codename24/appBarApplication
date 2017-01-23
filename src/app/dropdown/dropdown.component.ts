@@ -1,16 +1,7 @@
-import { Component, OnInit, Input , Output , EventEmitter,ElementRef} from '@angular/core';
+import { Component, OnInit, Input , Output , EventEmitter,ElementRef,Injectable} from '@angular/core';
+import {DropdownValue} from '../../app/dropdownvalue'
 
 
-export class DropdownValue
-{
-  value:string;
-  label:string;
-  constructor(value: string, label: string )
-  {
-    this.label = label;
-    this.value = value;
-  }
-}
 
 
 @Component({
@@ -18,29 +9,16 @@ export class DropdownValue
   templateUrl: './dropdown.component.html',
   styleUrls: ['./dropdown.component.css']
 })
- export class DropdownComponent implements OnInit {
+export class DropdownComponent implements OnInit {
 
-//   @Output() select = new EventEmitter();
+@Input() dropDownValues: DropdownValue[];
 
-//  values: DropdownValue;
-
-//  constructor(){   }
-//   ngOnInit() {
-//     this.select.emit(this.values[0]);
-//   } 
-@Input()
-values: DropdownValue[];
-@Output() select:EventEmitter<any>;
-
-constructor() {
-    this.select = new EventEmitter();
-  }
-
-  selectItem(value) {
-    this.select.emit(value);
-  }
 ngOnInit()
 {
 
 }
+// constructor(dropDownValues:DropdownValue[])
+// {
+//   this.dropDownValues = dropDownValues;
+// }
 }
